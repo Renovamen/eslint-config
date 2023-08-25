@@ -1,0 +1,3 @@
+{
+  "extends": "@renovamen/eslint-config-ts"
+}

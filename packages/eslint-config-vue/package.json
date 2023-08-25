@@ -1,0 +1,22 @@
+{
+  "name": "@renovamen/eslint-config-vue",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@renovamen/eslint-config-basic": "workspace:*",
+    "@renovamen/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.16.1",
+    "local-pkg": "^0.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2"
+  }
+}

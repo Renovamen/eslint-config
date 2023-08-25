@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "packageManager": "pnpm@8.6.12",
+  "scripts": {
+    "lint": "eslint --ext .js .",
+    "test": "pnpm -r run test",
+    "build": "pnpm -r run build",
+    "release": "bumpp -r && pnpm -r publish"
+  },
+  "devDependencies": {
+    "@renovamen/eslint-config-ts": "workspace:*",
+    "@renovamen/prettier-config": "workspace:*",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "prettier": "@renovamen/prettier-config"
+}
