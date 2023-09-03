@@ -16,5 +16,6 @@
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
   },
-  "prettier": "@renovamen/prettier-config"
+  "prettier": "@renovamen/prettier-config",
+  "version": "0.1.1"
 }
