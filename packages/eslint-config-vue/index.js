@@ -1,17 +1,5 @@
-const { isPackageExists } = require("local-pkg");
-
-const TS = isPackageExists("typescript");
-
-if (!TS)
-  console.warn(
-    "[@renovamen/eslint-config] TypeScript is not installed, fallback to JS only."
-  );
-
 module.exports = {
-  extends: [
-    "plugin:vue/vue3-recommended",
-    TS ? "@renovamen/eslint-config-ts" : "@renovamen/eslint-config-basic"
-  ],
+  extends: ["plugin:vue/vue3-recommended", "@renovamen/eslint-config-ts"],
   overrides: [
     {
       files: ["*.vue"],

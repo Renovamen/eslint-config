@@ -5,7 +5,8 @@
     "lint": "eslint --ext .js .",
     "test": "pnpm -r run test",
     "build": "pnpm -r run build",
-    "release": "bumpp -r && pnpm -r publish"
+    "bump": "bumpp -r",
+    "release": "pnpm -r publish --access public"
   },
   "devDependencies": {
     "@renovamen/eslint-config-ts": "workspace:*",

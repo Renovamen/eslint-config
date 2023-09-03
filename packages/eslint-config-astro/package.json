@@ -1,0 +1,21 @@
+{
+  "name": "@renovamen/eslint-config-astro",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@renovamen/eslint-config-basic": "workspace:*",
+    "@renovamen/eslint-config-ts": "workspace:*",
+    "eslint-plugin-astro": "^0.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2"
+  }
+}
