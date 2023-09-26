@@ -5,5 +5,8 @@
   "main": "index.json",
   "files": [
     "index.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

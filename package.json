@@ -3,10 +3,8 @@
   "packageManager": "pnpm@8.6.12",
   "scripts": {
     "lint": "eslint --ext .js .",
-    "test": "pnpm -r run test",
-    "build": "pnpm -r run build",
     "bump": "bumpp -r",
-    "release": "pnpm -r publish --access public"
+    "release": "pnpm -r publish"
   },
   "devDependencies": {
     "@renovamen/eslint-config-ts": "workspace:*",
