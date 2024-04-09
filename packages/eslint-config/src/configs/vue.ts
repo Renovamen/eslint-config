@@ -1,9 +1,9 @@
 import { GLOB_VUE } from "../globs";
 import { parserVue, pluginVue, tseslint } from "../plugins";
 import { typescriptCore } from "./typescript";
-import type { FlatESLintConfigItem } from "eslint-define-config";
+import type { FlatESLintConfig } from "eslint-define-config";
 
-export const vue: FlatESLintConfigItem[] = [
+export const vue: FlatESLintConfig[] = [
   ...(tseslint.config({
     extends: typescriptCore as any[],
     files: [GLOB_VUE]

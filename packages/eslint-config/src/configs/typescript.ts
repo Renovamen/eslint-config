@@ -1,6 +1,6 @@
 import { GLOB_JS, GLOB_TS, GLOB_TSX } from "../globs";
 import { tseslint } from "../plugins";
-import type { FlatESLintConfigItem } from "eslint-define-config";
+import type { FlatESLintConfig } from "eslint-define-config";
 
 export const typescriptCore = tseslint.config({
   extends: [...tseslint.configs.recommended],
@@ -15,9 +15,9 @@ export const typescriptCore = tseslint.config({
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/triple-slash-reference": "off"
   }
-}) as FlatESLintConfigItem[];
+}) as FlatESLintConfig[];
 
-export const typescript: FlatESLintConfigItem[] = [
+export const typescript: FlatESLintConfig[] = [
   ...typescriptCore,
   {
     files: [GLOB_JS, "**/*.cjs"],

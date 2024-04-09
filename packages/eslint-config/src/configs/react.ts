@@ -1,8 +1,8 @@
 import { GLOB_TSX } from "../globs";
 import { pluginReact } from "../plugins";
-import type { FlatESLintConfigItem } from "eslint-define-config";
+import type { FlatESLintConfig } from "eslint-define-config";
 
-export const react: FlatESLintConfigItem[] = [
+export const react: FlatESLintConfig[] = [
   {
     settings: {
       react: {

@@ -1,7 +1,6 @@
 import { hasVue, hasReact, hasSolid } from "./env";
-import { ignores, javascript, prettier, solid, typescript, vue } from "./configs";
-import type { FlatESLintConfigItem } from "eslint-define-config";
-import { react } from "./configs/react";
+import { ignores, javascript, prettier, typescript, react, solid, vue } from "./configs";
+import type { FlatESLintConfig } from "eslint-define-config";
 
 export const presetJavaScript = [...ignores, ...javascript];
 export const presetBasic = [...presetJavaScript, ...typescript];
@@ -13,7 +12,7 @@ export const presetBasic = [...presetJavaScript, ...typescript];
  * @returns
  */
 export function renovamen(
-  config: FlatESLintConfigItem | FlatESLintConfigItem[] = [],
+  config: FlatESLintConfig | FlatESLintConfig[] = [],
   {
     prettier: enablePrettier = true,
     vue: enableVue = hasVue,
@@ -29,7 +28,7 @@ export function renovamen(
     /** Prettier support. Default: true */
     prettier: boolean;
   }> = {}
-): FlatESLintConfigItem[] {
+): FlatESLintConfig[] {
   const configs = [...presetBasic];
 
   if (enableVue) configs.push(...vue);
@@ -40,5 +39,6 @@ export function renovamen(
   if (Object.keys(config).length > 0) {
     configs.push(...(Array.isArray(config) ? config : [config]));
   }
+
   return configs;
 }

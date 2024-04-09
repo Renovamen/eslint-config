@@ -1,8 +1,8 @@
 import { GLOB_TSX } from "../globs";
 import { pluginSolid } from "../plugins";
-import type { FlatESLintConfigItem } from "eslint-define-config";
+import type { FlatESLintConfig } from "eslint-define-config";
 
-export const solid: FlatESLintConfigItem[] = [
+export const solid: FlatESLintConfig[] = [
   {
     files: [GLOB_TSX],
     plugins: pluginSolid.plugins,

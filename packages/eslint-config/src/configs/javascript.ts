@@ -1,7 +1,7 @@
 import globals from "globals";
-import type { FlatESLintConfigItem } from "eslint-define-config";
+import type { FlatESLintConfig } from "eslint-define-config";
 
-export const javascript: FlatESLintConfigItem[] = [
+export const javascript: FlatESLintConfig[] = [
   {
     languageOptions: {
       globals: {
