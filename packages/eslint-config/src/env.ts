@@ -17,3 +17,5 @@ export const hasVue =
 export const hasReact = isPackageExists("react") || isPackageExists("next");
 
 export const hasSolid = isPackageExists("solid-js") || isPackageExists("@solidjs/start");
+
+export const hasAstro = isPackageExists("astro");

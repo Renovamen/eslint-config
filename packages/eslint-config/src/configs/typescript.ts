@@ -3,14 +3,8 @@ import { tseslint } from "../plugins";
 import type { FlatESLintConfig } from "eslint-define-config";
 
 export const typescriptCore = tseslint.config({
-  extends: [...tseslint.configs.recommended],
   files: [GLOB_TS, GLOB_TSX],
-  languageOptions: {
-    parser: tseslint.parser,
-    parserOptions: {
-      sourceType: "module"
-    }
-  },
+  extends: [...tseslint.configs.recommended],
   rules: {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/triple-slash-reference": "off"
