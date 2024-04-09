@@ -33,6 +33,7 @@ export const GLOB_EXCLUDE = [
   "**/.vite-inspect",
   "**/.nitro",
   "**/.vinxi",
+  "**/.astro",
 
   "**/CHANGELOG*.md",
   "**/*.min.*",

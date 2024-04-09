@@ -15,6 +15,7 @@ export const astroFormat: FlatESLintConfig[] = [
       format: pluginFormat
     },
     rules: {
+      "prettier/prettier": "off",
       "format/prettier": [
         "error",
         {
