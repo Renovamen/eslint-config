@@ -1,9 +1,10 @@
 import { GLOB_TSX } from "../globs";
 import { pluginSolid } from "../plugins";
-import type { FlatESLintConfig } from "eslint-define-config";
+import type { Linter } from "eslint";
 
-export const solid: FlatESLintConfig[] = [
+export const solid: Linter.FlatConfig[] = [
   {
+    name: "renovamen/solid",
     files: [GLOB_TSX],
     plugins: pluginSolid.plugins,
     rules: {

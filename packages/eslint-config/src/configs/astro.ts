@@ -1,12 +1,13 @@
 import { GLOB_ASTRO } from "../globs";
 import { pluginAstro, pluginFormat } from "../plugins";
 import { parserPlain } from "../utils";
-import type { FlatESLintConfig } from "eslint-define-config";
+import type { Linter } from "eslint";
 
-export const astro: FlatESLintConfig[] = [...pluginAstro.configs["flat/recommended"]];
+export const astro: Linter.FlatConfig[] = [...pluginAstro.configs["flat/recommended"]];
 
-export const astroFormat: FlatESLintConfig[] = [
+export const astroFormat: Linter.FlatConfig[] = [
   {
+    name: "renovamen/astro-format",
     files: [GLOB_ASTRO],
     languageOptions: {
       parser: parserPlain

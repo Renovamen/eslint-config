@@ -1,8 +1,8 @@
 import { GLOB_TSX } from "../globs";
 import { pluginReact } from "../plugins";
-import type { FlatESLintConfig } from "eslint-define-config";
+import type { Linter } from "eslint";
 
-export const react: FlatESLintConfig[] = [
+export const react: Linter.FlatConfig[] = [
   {
     settings: {
       react: {
@@ -11,11 +11,11 @@ export const react: FlatESLintConfig[] = [
     }
   },
   {
+    name: "renovamen/react",
     files: [GLOB_TSX],
-    plugins: {
-      react: pluginReact
-    },
+    plugins: pluginReact.plugins,
     rules: {
+      ...pluginReact.rules,
       "react/react-in-jsx-scope": "off",
       "react/no-unescaped-entities": "off",
       "react/no-unknown-property": "off"

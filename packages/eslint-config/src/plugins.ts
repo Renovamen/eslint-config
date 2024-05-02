@@ -8,7 +8,7 @@ export { tseslint };
 import * as _pluginVue from "eslint-plugin-vue";
 export const pluginVue = interopDefault(_pluginVue);
 
-import * as _pluginReact from "eslint-plugin-react";
+import * as _pluginReact from "eslint-plugin-react/configs/recommended.js";
 export const pluginReact = interopDefault(_pluginReact);
 
 import * as _pluginSolid from "eslint-plugin-solid/configs/typescript.js";

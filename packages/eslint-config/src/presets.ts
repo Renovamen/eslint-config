@@ -10,7 +10,7 @@ import {
   astro,
   astroFormat
 } from "./configs";
-import type { FlatESLintConfig } from "eslint-define-config";
+import type { Linter } from "eslint";
 
 export const presetJavaScript = [...ignores, ...javascript];
 export const presetBasic = [...presetJavaScript, ...typescript];
@@ -22,7 +22,7 @@ export const presetBasic = [...presetJavaScript, ...typescript];
  * @returns
  */
 export function renovamen(
-  config: FlatESLintConfig | FlatESLintConfig[] = [],
+  config: Linter.FlatConfig | Linter.FlatConfig[] = [],
   {
     prettier: enablePrettier = true,
     vue: enableVue = hasVue,
@@ -41,7 +41,7 @@ export function renovamen(
     /** Prettier support. Default: true */
     prettier: boolean;
   }> = {}
-): FlatESLintConfig[] {
+): Linter.FlatConfig[] {
   const configs = [...presetBasic];
 
   if (enablePrettier) configs.push(...prettier);
