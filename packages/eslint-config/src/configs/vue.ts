@@ -3,7 +3,7 @@ import { parserVue, pluginVue, tseslint } from "../plugins";
 import { typescriptCore } from "./typescript";
 import type { Linter } from "eslint";
 
-export const vue: Linter.FlatConfig[] = [
+export const vue: Linter.Config[] = [
   ...(tseslint.config({
     extends: typescriptCore as any[],
     files: [GLOB_VUE]

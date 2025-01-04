@@ -22,7 +22,7 @@ export const presetBasic = [...presetJavaScript, ...typescript];
  * @returns
  */
 export function renovamen(
-  config: Linter.FlatConfig | Linter.FlatConfig[] = [],
+  config: Linter.Config | Linter.Config[] = [],
   {
     prettier: enablePrettier = true,
     vue: enableVue = hasVue,
@@ -41,7 +41,7 @@ export function renovamen(
     /** Prettier support. Default: true */
     prettier: boolean;
   }> = {}
-): Linter.FlatConfig[] {
+): Linter.Config[] {
   const configs = [...presetBasic];
 
   if (enablePrettier) configs.push(...prettier);

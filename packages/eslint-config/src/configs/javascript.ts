@@ -1,7 +1,7 @@
 import globals from "globals";
 import type { Linter } from "eslint";
 
-export const javascript: Linter.FlatConfig[] = [
+export const javascript: Linter.Config[] = [
   {
     languageOptions: {
       globals: {

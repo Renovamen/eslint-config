@@ -2,7 +2,7 @@ import { GLOB_TSX } from "../globs";
 import { pluginReact } from "../plugins";
 import type { Linter } from "eslint";
 
-export const react: Linter.FlatConfig[] = [
+export const react: Linter.Config[] = [
   {
     settings: {
       react: {

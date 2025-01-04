@@ -9,9 +9,9 @@ export const typescriptCore = tseslint.config({
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/triple-slash-reference": "off"
   }
-}) as Linter.FlatConfig[];
+}) as Linter.Config[];
 
-export const typescript: Linter.FlatConfig[] = [
+export const typescript: Linter.Config[] = [
   ...typescriptCore,
   {
     files: [GLOB_JS, "**/*.cjs"],

@@ -3,9 +3,9 @@ import { pluginAstro, pluginFormat } from "../plugins";
 import { parserPlain } from "../utils";
 import type { Linter } from "eslint";
 
-export const astro: Linter.FlatConfig[] = [...pluginAstro.configs["flat/recommended"]];
+export const astro: Linter.Config[] = [...pluginAstro.configs["flat/recommended"]];
 
-export const astroFormat: Linter.FlatConfig[] = [
+export const astroFormat: Linter.Config[] = [
   {
     name: "renovamen/astro-format",
     files: [GLOB_ASTRO],
