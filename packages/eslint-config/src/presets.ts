@@ -12,8 +12,8 @@ import {
 } from "./configs";
 import type { Linter } from "eslint";
 
-export const presetJavaScript = [...ignores, ...javascript];
-export const presetBasic = [...presetJavaScript, ...typescript];
+export const presetJavaScript: Linter.Config[] = [...ignores, ...javascript];
+export const presetBasic: Linter.Config[] = [...presetJavaScript, ...typescript];
 
 /**
  *

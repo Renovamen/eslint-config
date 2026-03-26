@@ -29,7 +29,7 @@ export const vue: Linter.Config[] = [
     processor: pluginVue.processors[".vue"],
     rules: {
       ...pluginVue.configs["base"].rules,
-      ...pluginVue.configs["vue3-essential"].rules,
+      ...pluginVue.configs["essential"].rules,
       "vue/no-v-html": "off",
       "vue/multi-word-component-names": "off"
     }

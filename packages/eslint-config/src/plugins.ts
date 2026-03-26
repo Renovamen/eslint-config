@@ -12,7 +12,7 @@ import * as _pluginReact from "eslint-plugin-react/configs/recommended.js";
 export const pluginReact = interopDefault(_pluginReact);
 
 import * as _pluginSolid from "eslint-plugin-solid/configs/typescript";
-export const pluginSolid = interopDefault(_pluginSolid);
+export const pluginSolid: any = interopDefault(_pluginSolid);
 
 import * as _pluginAstro from "eslint-plugin-astro";
 export const pluginAstro = interopDefault(_pluginAstro);
@@ -24,7 +24,7 @@ import * as _configPrettier from "eslint-config-prettier";
 export const configPrettier = interopDefault(_configPrettier);
 
 import * as _pluginFormat from "eslint-plugin-format";
-export const pluginFormat = interopDefault(_pluginFormat);
+export const pluginFormat: any = interopDefault(_pluginFormat);
 
 export * as parserVue from "vue-eslint-parser";
 export * as parserAstro from "astro-eslint-parser";
