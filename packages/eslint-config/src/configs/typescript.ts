@@ -16,8 +16,7 @@ export const typescript: Linter.Config[] = [
   {
     files: [GLOB_JS, "**/*.cjs"],
     rules: {
-      "@typescript-eslint/no-require-imports": "off",
-      "@typescript-eslint/no-var-requires": "off"
+      "@typescript-eslint/no-require-imports": "off"
     }
   }
 ];

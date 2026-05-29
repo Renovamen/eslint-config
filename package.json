@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "0.1.10",
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.5.0",
   "type": "module",
   "scripts": {
     "build": "pnpm --filter=eslint-config build",
@@ -12,13 +12,13 @@
   "devDependencies": {
     "@renovamen/prettier-config": "workspace:*",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^25.5.0",
-    "bumpp": "^11.0.1",
-    "eslint": "^10.1.0",
-    "pnpm": "^10.33.0",
+    "@types/node": "^25.9.1",
+    "bumpp": "^11.1.0",
+    "eslint": "^10.4.0",
+    "pnpm": "^11.5.0",
     "sucrase": "^3.35.1",
-    "tsup": "^8.5.1",
-    "typescript": "^5.8.3"
+    "tsdown": "^0.22.1",
+    "typescript": "^6.0.0"
   },
   "prettier": "@renovamen/prettier-config"
 }
